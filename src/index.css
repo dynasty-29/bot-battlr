@@ -147,11 +147,16 @@ nav ul li a:hover {
   margin-bottom: 20px;
 }
 
+.bot-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px; 
+}
 .bot {
   display: flex;
   flex-direction: column;
   width: 150px;
-  margin: 10px;
+  margin: 10px 0;
   text-align: center;
 }
 
@@ -228,10 +233,10 @@ nav ul li a:hover {
 }
 .home-buttons {
   display: flex;
-  flex-direction: column; /* Stack buttons vertically */
-  align-items: center;    /* Center buttons horizontally */
-  gap: 20px;              /* Add spacing between buttons */
-  margin-top: 30px;       /* Add spacing from the paragraph above */
+  flex-direction: column; 
+  align-items: center;    
+  gap: 20px;              
+  margin-top: 30px;       
 }
 
 .home-button {
