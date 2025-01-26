@@ -21,3 +21,5 @@ Welcome to Bot Battlr, the ultimate hub where you, as a galactic overlord, can b
 6. Sort bots by health, damage, or armor and filter them by class.
 
 7. Ensure your army has only one bot from each class.
+
+

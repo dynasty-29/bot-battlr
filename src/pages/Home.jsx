@@ -6,9 +6,10 @@ function Home (){
     <div className="home">
       <h1>Welcome to Bot Battlr!</h1>
       <p>Build your ultimate bot army and conquer the galaxy!</p>
-      <Link to="/bots">Start Enlisting Bots</Link>
-      <br />
-      <Link to="/about">About</Link>
+      <div className="home-buttons">
+        <Link to="/bots" className="home-button">Start Enlisting Bots</Link>
+        <Link to="/about" className="home-button">About</Link>
+      </div>
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import BotCollection from '../src/components/BotCollection';
 import YourBotArmy from '../src/components/YourBotArmy';
@@ -7,16 +7,27 @@ import Home from '../src/pages/Home';
 import About from '../src/pages/About';
 import NavBar from '../src/components/NavBar'; // Import the Navigation component
 
-const App = () => {
+function App (){
+  const [myArmy, setMyArmy] = useState([]);
+
+  const handleEnlist = (bot) => {
+    if (!myArmy.some((b) => b.id === bot.id)) {
+      setMyArmy([...myArmy, bot]);
+    }
+  };
+
+  const handleRelease = (bot) => {
+    setMyArmy((prevArmy) => prevArmy.filter((b) => b.id !== bot.id));
+  };
   return (
-    <Router>
+    <Router basename="/bot-battlr">
       <div className="app">
-        <NavBar />  {/* Render the Navigation component here */}
+        <NavBar />  
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/bots" element={<BotCollection />} />
-          <Route path="/your-army" element={<YourBotArmy />} />
+          <Route path="/bots" element={<BotCollection onEnlist={handleEnlist} />} />
+          <Route path="/your-army" element={<YourBotArmy army={myArmy} onRelease={handleRelease}/>} />
           <Route path="/bot/:id" element={<BotDetails />} />
         </Routes>
       </div>

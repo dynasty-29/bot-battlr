@@ -13,6 +13,7 @@ function BotCard ({ bot, onEnlist }) {
       <p>Health: {bot.health}</p>
       <p>Damage: {bot.damage}</p>
       <p>Armor: {bot.armor}</p>
+      <p>Catchphrase: {bot.catchphrase}</p>
     </div>
   );
 };

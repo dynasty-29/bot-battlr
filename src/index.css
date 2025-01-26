@@ -9,6 +9,7 @@ body{
 
 h1, h2, h3 {
   font-family: "Amatic SC", serif;
+  font-size: 50px;
 }
 
 a {
@@ -18,7 +19,7 @@ a {
 
 /* Navigation Styles */
 nav {
-  background-color: #333;
+  background-color: #320303;
   padding: 10px;
 }
 
@@ -33,7 +34,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: rgb(4, 69, 77);
   font-size: 18px;
 }
 
@@ -48,19 +49,19 @@ nav ul li a:hover {
 }
 
 .home h1 {
-  font-size: 2.5rem;
+  font-size: 40px;
   margin-bottom: 20px;
 }
 
 .home p {
-  font-size: 1.2rem;
+  font-size: 40px;
   margin-bottom: 30px;
 }
 
 .home a {
   padding: 10px 20px;
-  background-color: #007BFF;
-  color: white;
+  background-color: #034521;
+  color: rgb(2, 77, 51);
   border-radius: 5px;
 }
 
@@ -75,12 +76,12 @@ nav ul li a:hover {
 }
 
 .about h1 {
-  font-size: 2.5rem;
+  font-size: 30px;
   margin-bottom: 20px;
 }
 
 .about p {
-  font-size: 1.2rem;
+  font-size: 40px;
   margin-bottom: 30px;
 }
 
@@ -104,8 +105,8 @@ nav ul li a:hover {
 }
 
 .bot-card {
-  background-color: white;
-  border: 1px solid #ddd;
+  background-color: rgb(4, 74, 107);
+  border: 1px solid #550e0e;
   padding: 20px;
   width: 250px;
   margin: 10px;
@@ -121,12 +122,12 @@ nav ul li a:hover {
 }
 
 .bot-card h3 {
-  font-size: 1.4rem;
+  font-size: 40px;
   margin-top: 10px;
 }
 
 .bot-card p {
-  font-size: 1rem;
+  font-size: 40px;
   margin: 5px 0;
 }
 
@@ -142,12 +143,13 @@ nav ul li a:hover {
 }
 
 .your-bot-army h2 {
-  font-size: 2rem;
+  font-size: 40px;
   margin-bottom: 20px;
 }
 
 .bot {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   width: 150px;
   margin: 10px;
   text-align: center;
@@ -161,15 +163,15 @@ nav ul li a:hover {
 
 .bot button {
   padding: 5px 10px;
-  background-color: red;
-  color: white;
+  background-color: rgb(4, 90, 2);
+  color: rgb(63, 89, 3);
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .bot button:hover {
-  background-color: #d9534f;
+  background-color: #08ccef;
 }
 
 /* BotDetails Styles */
@@ -185,26 +187,26 @@ nav ul li a:hover {
 }
 
 .bot-details h3 {
-  font-size: 2rem;
+  font-size: 40px;
   margin-top: 20px;
 }
 
 .bot-details p {
-  font-size: 1.2rem;
+  font-size: 20px;
   margin: 10px 0;
 }
 
 .bot-details button {
   padding: 10px 20px;
   background-color: #28a745;
-  color: white;
+  color: rgb(1, 104, 85);
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .bot-details button:hover {
-  background-color: #218838;
+  background-color: #34c7c5;
 }
 
 .bot-details button:focus {
@@ -212,15 +214,35 @@ nav ul li a:hover {
 }
 
 .bot-details .back-button {
-  margin-top: 20px;
+  margin-top: 30px;
   display: inline-block;
   padding: 10px 20px;
-  background-color: #6c757d;
-  color: white;
+  background-color: #022a4d;
+  color: rgb(2, 78, 100);
   border-radius: 5px;
   text-decoration: none;
 }
 
 .bot-details .back-button:hover {
   background-color: #5a6268;
+}
+.home-buttons {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  align-items: center;    /* Center buttons horizontally */
+  gap: 20px;              /* Add spacing between buttons */
+  margin-top: 30px;       /* Add spacing from the paragraph above */
+}
+
+.home-button {
+  padding: 10px 20px;
+  background-color: #034521;
+  color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.home-button:hover {
+  background-color: #0056b3;
 }
