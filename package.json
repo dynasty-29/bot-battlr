@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist",
-    "start-server": "json-server --watch src/data/db.json --port 8001"
+    "start-server": "json-server --watch public/db.json --port 8001"
   },
   "dependencies": {
     "gh-pages": "^6.3.0",
