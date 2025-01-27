@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
+//bots details components
 function BotDetails({ onEnlist, onBack }) {
   const { id } = useParams();
   const [bot, setBot] = useState(null);

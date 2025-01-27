@@ -1,7 +1,11 @@
 import React from 'react';
 
+
+//Botcard component
+//It will display the demographics of each bot
 function BotCard ({ bot, onEnlist }) {
 
+  //function that shows these demographic on handling the click event
   function handleClick() {
     onEnlist(bot); 
   };

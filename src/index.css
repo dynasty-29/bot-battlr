@@ -7,9 +7,18 @@ body{
   font-family: "Iceberg", serif;
 }
 
-h1, h2, h3 {
-  font-family: "Amatic SC", serif;
+h1{
+  font-family: "Nosifer", serif;
+  font-size: 250px;
+  color: rgb(238, 7, 7);
+}
+h2, h3{
+  font-family: "Iceberg", serif;
   font-size: 50px;
+}
+p{
+  font-family: "Lato", serif;
+  text-align: justify;
 }
 
 a {
@@ -34,7 +43,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: rgb(4, 69, 77);
+  color: rgb(5, 45, 243);
   font-size: 18px;
 }
 
@@ -116,7 +125,7 @@ nav ul li a:hover {
 }
 
 .bot-card img {
-  max-width: 100%;
+  max-width: 300%;
   height: auto;
   border-radius: 5px;
 }
@@ -250,4 +259,52 @@ nav ul li a:hover {
 
 .home-button:hover {
   background-color: #0056b3;
+}
+.enlist-button {
+  margin-top: 1rem;
+  padding: 0.5rem 1.5rem;
+  background-color: #fa2803; /* Purple */
+  color: rgb(6, 15, 98);
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(12, 197, 230, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.enlist-button:hover {
+  background-color: #f4043c; /* Darker Purple */
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(239, 1, 1, 0.2);
+}
+
+.enlist-button:active {
+  transform: scale(0.98);
+  box-shadow: 0 3px 5px rgba(247, 8, 8, 0.15);
+}
+.release-button {
+  margin-top: 1rem;
+  padding: 0.5rem 1.5rem;
+  background-color: #04cb04; /* Purple */
+  color: rgb(4, 151, 196);
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.release-button:hover {
+  background-color: #10f71f; /* Darker Purple */
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.release-button:active {
+  transform: scale(0.98);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
 }

@@ -2,7 +2,10 @@ import React, { useState, useEffect } from 'react';
 import BotCard from './BotCard';
 import YourBotArmy from './YourBotArmy';
 
+//Bot Collection component
 function BotCollection() {
+
+  //utilisaing usState that handles our component arrays
   const [bots, setBots] = useState([]);
   const [myArmy, setMyArmy] = useState([]);
 
@@ -14,13 +17,13 @@ function BotCollection() {
       .catch((error) => console.error('Error fetching bots:', error));
   }, []);
 
-  // Enlist bot into the army
+  // function that enlist bot into the army
   function handleEnlist(bot) {
     console.log(`Enlisted ${bot.name}`);
     setMyArmy((prevArmy) => [...prevArmy, bot]);
   }
 
-  // Release bot from the army
+  // function that release bot from the army
   function handleRelease(botId) {
     console.log(`Released bot with ID: ${botId}`);
     setMyArmy((prevArmy) => prevArmy.filter((bot) => bot.id !== botId));
@@ -32,8 +35,8 @@ function BotCollection() {
       <div className="bot-list">
         {bots.map((bot) => (
           <div key={bot.id} className="bot-card">
-            <BotCard bot={bot} onEnlist={handleEnlist} /> {/* Pass onEnlist here */}
-            <button onClick={() => handleEnlist(bot)}>Enlist</button> {/* Optional button */}
+            <BotCard bot={bot} onEnlist={handleEnlist} /> 
+            <button onClick={() => handleEnlist(bot)} className="enlist-button">Enlist</button> 
           </div>
         ))}
       </div>

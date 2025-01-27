@@ -1,6 +1,8 @@
 import React from 'react';
 import BotCard from './BotCard';
 
+// my bot army component that handles all bots that enlist. 
+//Onces a bot is enlisted it appears at the bottom of bot collection page showing this is what you enlisted
 function YourBotArmy({ army, onRelease }) {
   return (
     <div className="your-bot-army">
@@ -9,7 +11,7 @@ function YourBotArmy({ army, onRelease }) {
         army.map((bot) => (
           <div key={bot.id} className="army-card">
             <BotCard bot={bot} />
-            <button onClick={() => onRelease(bot.id)}>Release</button>
+            <button onClick={() => onRelease(bot.id)} className="release-button">Release</button>
           </div>
         ))
       ) : (
